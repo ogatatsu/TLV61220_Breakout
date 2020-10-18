@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Texas_TLV61220)(type Legacy)(uri ${KIPRJMOD}/oreore-kicad-library/symbols/Texas_TLV61220.lib)(options "")(descr ""))
+)

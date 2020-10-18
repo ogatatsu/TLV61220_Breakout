@@ -1,0 +1,241 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R2
+U 1 1 5EB1160B
+P 6250 3550
+F 0 "R2" H 6320 3596 50  0000 L CNN
+F 1 "R" H 6320 3505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6180 3550 50  0001 C CNN
+F 3 "~" H 6250 3550 50  0001 C CNN
+	1    6250 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5EB11C12
+P 6550 3400
+F 0 "C2" H 6665 3446 50  0000 L CNN
+F 1 "10uF" H 6665 3355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6588 3250 50  0001 C CNN
+F 3 "~" H 6550 3400 50  0001 C CNN
+	1    6550 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 3400 6250 3400
+Wire Wire Line
+	6200 3100 6250 3100
+Wire Wire Line
+	5500 3600 5450 3600
+Connection ~ 6250 3400
+Wire Wire Line
+	6250 3750 6250 3700
+Wire Wire Line
+	6250 3100 6550 3100
+Connection ~ 6250 3100
+Wire Wire Line
+	6550 3100 6550 3250
+Wire Wire Line
+	6550 3100 6750 3100
+Connection ~ 6550 3100
+Text GLabel 5450 3750 3    50   Input ~ 0
+GND
+Text GLabel 6250 3750 3    50   Input ~ 0
+GND
+Wire Wire Line
+	5450 3600 5450 3750
+Text GLabel 3900 3300 0    50   Input ~ 0
+VIN
+Text GLabel 4200 3750 3    50   Input ~ 0
+GND
+Text GLabel 6550 3750 3    50   Input ~ 0
+GND
+Wire Wire Line
+	6550 3550 6550 3750
+Text GLabel 6750 3100 2    50   Input ~ 0
+VOUT
+Text GLabel 7550 3450 1    50   Input ~ 0
+VIN
+Text GLabel 7650 3450 1    50   Input ~ 0
+GND
+Text GLabel 7750 3450 1    50   Input ~ 0
+VOUT
+Wire Wire Line
+	7550 3450 7550 3500
+Wire Wire Line
+	7650 3500 7650 3450
+Wire Wire Line
+	7750 3450 7750 3500
+$Comp
+L Connector_Generic:Conn_01x03 J1
+U 1 1 5EB195A8
+P 7650 3700
+F 0 "J1" V 7522 3512 50  0000 R CNN
+F 1 "Conn_01x03" V 7613 3512 50  0000 R CNN
+F 2 "footprints:Connector_2.54mm_03" H 7650 3700 50  0001 C CNN
+F 3 "~" H 7650 3700 50  0001 C CNN
+	1    7650 3700
+	0    -1   1    0   
+$EndComp
+Text GLabel 2750 3550 3    50   Input ~ 0
+VIN
+Text GLabel 3200 3550 3    50   Input ~ 0
+GND
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5EB1DB7A
+P 2750 3450
+F 0 "#FLG0101" H 2750 3525 50  0001 C CNN
+F 1 "PWR_FLAG" H 2750 3623 50  0000 C CNN
+F 2 "" H 2750 3450 50  0001 C CNN
+F 3 "~" H 2750 3450 50  0001 C CNN
+	1    2750 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5EB1E548
+P 3200 3450
+F 0 "#FLG0102" H 3200 3525 50  0001 C CNN
+F 1 "PWR_FLAG" H 3200 3623 50  0000 C CNN
+F 2 "" H 3200 3450 50  0001 C CNN
+F 3 "~" H 3200 3450 50  0001 C CNN
+	1    3200 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 3450 3200 3550
+Wire Wire Line
+	2750 3450 2750 3550
+$Comp
+L Device:L L1
+U 1 1 5EB104B2
+P 5250 3100
+F 0 "L1" V 5440 3100 50  0000 C CNN
+F 1 "4.7uH" V 5349 3100 50  0000 C CNN
+F 2 "Inductor_SMD:L_1210_3225Metric" H 5250 3100 50  0001 C CNN
+F 3 "~" H 5250 3100 50  0001 C CNN
+	1    5250 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 5EB25BC9
+P 5450 2850
+F 0 "#FLG0103" H 5450 2925 50  0001 C CNN
+F 1 "PWR_FLAG" H 5450 3023 50  0000 C CNN
+F 2 "" H 5450 2850 50  0001 C CNN
+F 3 "~" H 5450 2850 50  0001 C CNN
+	1    5450 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 3100 5450 3100
+Connection ~ 5450 3100
+$Comp
+L Texas_TLV61220:TLV61220 U1
+U 1 1 5EB1A6A3
+P 5850 3300
+F 0 "U1" H 5850 3725 50  0000 C CNN
+F 1 "TLV61220" H 5850 3634 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6_Handsoldering" H 5900 3300 50  0001 C CNN
+F 3 "" H 5900 3300 50  0001 C CNN
+	1    5850 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 2850 5450 3100
+Wire Wire Line
+	5450 3100 5500 3100
+Wire Wire Line
+	3900 3300 4200 3300
+Connection ~ 4200 3300
+Wire Wire Line
+	4200 3300 4200 3100
+Wire Wire Line
+	4200 3100 5100 3100
+Wire Wire Line
+	4200 3300 4550 3300
+$Comp
+L Jumper:SolderJumper_2_Bridged JP1
+U 1 1 5EB56E60
+P 4900 3400
+F 0 "JP1" H 4900 3300 50  0000 C CNN
+F 1 "SolderJumper_2_Bridged" H 4900 3250 28  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 4900 3400 50  0001 C CNN
+F 3 "~" H 4900 3400 50  0001 C CNN
+	1    4900 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 3400 4550 3400
+Wire Wire Line
+	4550 3400 4550 3300
+Connection ~ 4550 3300
+Wire Wire Line
+	4550 3300 5500 3300
+Text GLabel 5300 3750 3    50   Input ~ 0
+EN
+Wire Wire Line
+	5300 3750 5300 3400
+Connection ~ 5300 3400
+Wire Wire Line
+	5300 3400 5500 3400
+Wire Wire Line
+	4200 3650 4200 3750
+Wire Wire Line
+	4200 3350 4200 3300
+$Comp
+L Device:C C1
+U 1 1 5EB0FE64
+P 4200 3500
+F 0 "C1" H 4315 3546 50  0000 L CNN
+F 1 "10uF" H 4315 3455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4238 3350 50  0001 C CNN
+F 3 "~" H 4200 3500 50  0001 C CNN
+	1    4200 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J2
+U 1 1 5EB624AF
+P 7550 2950
+F 0 "J2" V 7422 3030 50  0000 L CNN
+F 1 "Conn_01x01" V 7513 3030 50  0000 L CNN
+F 2 "footprints:Connector_2.54mm_01" H 7550 2950 50  0001 C CNN
+F 3 "~" H 7550 2950 50  0001 C CNN
+	1    7550 2950
+	0    1    1    0   
+$EndComp
+Text GLabel 7550 2650 1    50   Input ~ 0
+EN
+Wire Wire Line
+	7550 2650 7550 2750
+$Comp
+L Device:R R1
+U 1 1 5EB10D65
+P 6250 3250
+F 0 "R1" H 6320 3296 50  0000 L CNN
+F 1 "1M" H 6320 3205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6180 3250 50  0001 C CNN
+F 3 "~" H 6250 3250 50  0001 C CNN
+	1    6250 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 3400 5300 3400
+$EndSCHEMATC
